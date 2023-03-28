@@ -1,4 +1,6 @@
-*, *::before, *::after, {
+*, 
+*::before, 
+*::after, {
     box-sizing: border-box;
 }
 body {
@@ -150,6 +152,7 @@ body {
   }
 
   @media screen and (max-width: 1200px) {
+
     .navlinkwrap {
       display: none;
     }
@@ -187,11 +190,12 @@ body {
     margin: 0;
     font-family: Poppins;
     color: #ffffff;
-    font-size: 65px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 600px;
     line-height: 60px;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     text-align: left;
+
   }
   .box .infobox-slimtext {
     margin: 24px 0;
@@ -273,29 +277,29 @@ body {
   animation-play-state: paused;
 }
 
-  @keyframes animate
+@keyframes animate
+{
+  0%
   {
-    0%
-    {
-      transform: translateX(100%);
-    }
-    100%
-    {
-      transform: translateX(-100%);
-    }
+    transform: translateX(100%);
   }
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
 
-  @keyframes animate2
+@keyframes animate2
+{
+  0%
   {
-    0%
-    {
-      transform: translateX(0%);
-    }
-    100%
-    {
-      transform: translateX(-200%);
-    }
+    transform: translateX(0%);
   }
+  100%
+  {
+    transform: translateX(-200%);
+  }
+}
 
   .box .display div img{
     margin: 0 25px;
@@ -546,7 +550,8 @@ body {
   }
 
   .footer-main {
-    max-width: 40%;
+    max-width: 60%;
+    text-align: justify;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -587,7 +592,9 @@ body {
     line-height: 36px;
     color: #828282;
   }
-  
+  .footer-navigate .nav a{
+    color: #ffffff;
+  }
   .item {
     display: flex;
     flex-direction: column;
@@ -700,9 +707,11 @@ body {
       flex-direction: column;
     }
     .footer-main {
+      font-size: 25px;
       max-width: 80%;
       margin-bottom: 50px;
       text-align: center;
+      text-align: justify;
     }
     .footer-navigate .nav:first-child {
       margin: 0;
@@ -725,6 +734,13 @@ body {
       grid-template-columns: auto auto;
       justify-content: space-around;
     }
+
+    .box .infobox-boldtext{
+      font-size: 45px;
+      line-height: 50px;
+    }
+
+
   }
   @media screen and (max-width: 700px) {
     .box {
@@ -792,6 +808,7 @@ body {
       max-width: 95%;
       margin-bottom: 50px;
       text-align: center;
+      text-align: justify;
     }
   
     .footer-navigate {
