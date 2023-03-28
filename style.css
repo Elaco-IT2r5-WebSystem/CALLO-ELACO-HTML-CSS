@@ -595,6 +595,19 @@ body {
   .footer-navigate .nav a{
     color: #ffffff;
   }
+    .item-wraps {
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 70px;
+    height: 90px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .item-wraps:hover {
+    transform: scale(1.05);
+  }
+
   .item {
     display: flex;
     flex-direction: column;
